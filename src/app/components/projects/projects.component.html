@@ -1,1 +1,8 @@
 <p>projects works!</p>
+<div class="grid grid-cols-1 md:grid-cols2 lg:grid-cols-3 gap-8 max-w-6xl max-auto">
+    <ng-container>
+        <app-project-card  *ngFor="let projets of allProjets | filterProjects : selectedTech(); trackBy: trackByProjected">
+        
+        </app-project-card>
+    </ng-container>
+</div>
